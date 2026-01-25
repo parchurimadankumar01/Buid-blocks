@@ -1,5 +1,113 @@
-.red{
+/* .red{
+
     background-color: powderblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 120%;
+} */
+
+
+/* body{
+    font-family: Arial;
+    background: #f5f7fa;
 }
+
+.beginner{
+    margin: 30px;
+    font-size: 24px;
+}
+
+/* Flex box magic 
+.container{
+   display: flex;  /* enables flexbox 
+   gap: 20px;      /* Space Between Cards 
+   padding: 20px;
+}
+
+.card{
+    background: white; 
+    padding: 20px;
+    width: 30%; /* 3 cards fit in one row
+    border-radius: 10px;
+    box-shadow:0 4px 10px rga(0,0,0,0.1); /* Gives the card floating effect (used everywhere)
+}
+
+/* Why do we need @media?
+
+Imagine this:
+
+On laptop → 3 cards in one row ✅
+
+On mobile → 3 cards become very small ❌
+
+So we say:
+
+“If screen becomes small, stack cards vertically.”
+
+That decision is done using @media. */
+
+/* @media (condition) {
+   CSS that runs ONLY when condition is true 
+} */
+ /* [ Card ] [ Card ] [ Card ]  for laptop we can see like this
+ */
+ /*[ Card ]
+
+
+   [ Card ]
+   [ Card ]  we can see card like this
+  
+
+  @media (max-width: 768px){
+    .container{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+        
+    }
+  }
+
+  .grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  .cards{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* box-shadow: offset-x offset-y blur color; 
+  } */
+
+
+  .course-item{
+       display: flex;  /*  */
+       align-items: center;
+       gap: 12px;
+    
+  }
+  
+
+  .container{
+    display: flex;
+    padding: 20px;
+    gap: 15px;
+    border-radius: 25px;
+    background-color: blue;
+    margin: 20px;
+
+  }
+  .card{
+    padding: 20px;
+    margin: 15px;
+    background-color: aqua;
+    border-radius: 20px;
+    box-shadow: 5px 10px black;
+  }
+
+ .d{
+    border-radius: 10px;
+    background-color:aqua;
+    width: auto;
+ }

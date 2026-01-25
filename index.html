@@ -2,35 +2,284 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Github</title>
+    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <title>Gitdub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-
+<!-- 
     <h1 class="red">turn red color</h1>
-    <!--Change alert message   addEventListener-->
-<!-- <button onclick="Sclick()" style="background-color: burlywood; border-radius: 20%; border-style: hidden; color: chocolate;">Click for button</button><br> -->
-<!-- <button id="btn" >To click</button> -->
-<button class="btn" >click</button>
+    <Change alert message   addEventListener--
+<-- <button onclick="Sclick()" style="background-color: burlywood; border-radius: 20%; border-style: hidden; color: chocolate;">Click for button</button><br> 
+<-- <button id="btn" >To click</button> 
+<-- <button class="btnn" >click</button> 
+<--Change text--
+<--Change button text--
+<-- <button onclick="innerText='changed'" >change</button> -->
+
+<!-- <h1 id="he">This is my first website</h1>
+<button onclick="btns()" >click to change h1 value</button>
 
 
 
-<!--Change text-->
+<p id="p">pharagraph is no done</p> 
+<button id="pra" onclick="pra()">para change</button>
+ -->
+<!-- <h2 class="beginner">Beginner Level</h2>
+ <div class="container">
+    <div class="card">
+        <h3>1. Html Basics</h3>
+        <ul> <--un-order list--
+           <li>Intrpduction to html</li> <-- List items--
+           <li>Html structur</li>
+           <li>Lists & Tables</li>
+           <li>Common Html Tags</li>
+           <li>Forms & Input Types</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>2. Css Basics</h2>
+        <ul>
+            <li>Introduction to Css</li>
+            <li>Css syntax and sectors</li>
+            <li>Colors and Borders</li>
+            <li>Selectors</li>
+            <li>Box Model</li>
+            <li>Fonts</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h2>3. JavaScript Basics</h2>
+        <ul>
+            <li>Introduction to Css</li>
+            <li>Css syntax and sectors</li>
+            <li>Colors and Borders</li>
+            <li>Selectors</li>
+            <li>Box Model</li>
+            <li>Fonts</li>
+        </ul>
+    </div>
+
+    
+</div> 
+
+<!-- 
+<div class="grid-container">
+    <div class="cards">Html Basics</div>
+    <div class="cards">Css Basics</div>
+    <div class="cards">JavaScript Basics</div>
+</div> -->
 
 
-<!--Change button text-->
-<!-- <button onclick="innerText='changed'" >change</button> -->
+<h1>Beginner Level</h1>
+<div class="container">
+<div class="card">
+    <h2>1. Html</h2>
+    <ul>
+        <li  >
+            <div class="course-item">
+                <span id="ma"> madan kumar</span>
+                <button onclick="CompletCourse(this)" ondblclick="resetCourse(this)">Completed</button> 
+                <!-- You want a button that can change UI state:
+
+                Click once → mark course as completed
+                
+                Double click → reset to original state
+                
+                This is called state toggle in UI.-->
+<!-- WHY THIS IS USED
+Attribute	Purpose
+onclick	Runs when user clicks once
+ondblclick	Runs when user double clicks
+this	Refers to this exact button
+🧠 What is this here?
+
+this means:
+
+“The button that was clicked”
+
+So:
+
+CompletCourse(this);
 
 
+JS receives:
+
+btn = <button>Completed</button>
 
 
+👉 This allows one function to work for multiple items.
+
+🧠 USER INTERACTION FLOW
+
+1️⃣ User clicks button
+→ markCompleted(this) runs
+→ Course marked completed
+
+2️⃣ User double-clicks same button
+→ resetCourse(this) runs
+→ Course resets
+
+💡 WHY THIS DESIGN IS SMART
+
+✔ No IDs needed
+✔ Works for unlimited list items
+✔ Clean DOM traversal
+✔ Industry-style reusable code
+
+💼 INTERVIEW READY EXPLANATION
+
+“I used click and double-click events to toggle UI state. The button reference is passed using this, and DOM traversal is used to update the related element.”
+
+🧠 MEMORY RULE (KEEP THIS)
+
+HTML → structure
+CSS → appearance
+JS → behavior
+
+🔥 BONUS: WHY NOT getElementById()?
+
+❌ Bad:
+
+document.getElementById("ma")
 
 
+✔ Good:
+
+btn.previousElementSibling
 
 
+Because:
 
+IDs must be unique
+
+Lists have many items
+
+This scales better
+
+🧪 FINAL MINI PRACTICE FOR YOU
+
+Try adding:
+
+Change button text to Undo
+
+Disable button after complete
+
+Add checkbox instead of button
+
+You are now learning REAL DOM thinking, not just syntax 👏
+If you want next:
+
+localStorage save
+
+animations
+
+React version
+
+accessibility improvements
+
+Just tell me 👍 -->
+
+            </div>
+     
+        </li>
+        <li>Parchuri</li>
+        <li>KUmar</li>
+    </ul>
+</div>
+<div class="card">
+    <h2>2. Css</h2>
+    <ul>
+        <li>madan kumar</li>
+        <li>Parchuri</li>
+        <li>KUmar</li>
+    </ul>
+</div>
+<div class="card">
+    <h2>3. Javascript</h2>
+    <ul>
+        <li>madan kumar</li>
+        <li>Parchuri</li>
+        <li>Kumar</li>
+    </ul>
+</div>
+</div>
+
+<!-- 
+table>thead>tr>th*3^^tbody>tr*3>td*3
+-  -->
+<!-- <div class="d">
+    <table border="1px">
+        <caption>Students Marks</caption>
+        <thead> 
+            <tr>
+                <td>Sno</td>
+                <td>name</td>
+                <td>Age</td>
+            </tr>
+        </thead>
+            <tr>
+                <td>1</td>
+                <td>Madan Kumar</td>
+                <td>29</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shiny</td>
+                <td>26</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="4" >
+                        End of tde Tables
+                    </td>
+                </tr>
+            </tfoot>
+           
+           
+       
+       
+    </table>
+</div> -->
+
+<!-- Html Forms & Input Types -->
+ <!-- <form> is used to collect user data and send it to a server.
+
+<form>
+  -- inputs go here 
+</form>
+
+Real-world uses
+
+Login pages
+
+Signup pages
+
+Payments
+
+Search bars
+
+Feedback forms
+
+Job applications
+
+🔹 PART 2: BASIC FORM STRUCTURE (MUST KNOW)
+<form action="/submit" method="post">
+  <input type="text" name="username">
+  <button type="submit">Submit</button>
+</form> -->
+
+<form action="/submit" method="post">
+    <input type="text" name="username">
+    <button type="submit">Submit</button>
+</form>
+<!-- Why each thing exists
+Part	Why
+action	Where data goes
+method	How data is sent (GET / POST)
+name	Key used by backend
+submit	Triggers form send -->
     <script src="javascript.js"></script>
 </body>
 </html>
