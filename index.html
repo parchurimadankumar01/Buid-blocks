@@ -1,286 +1,198 @@
 <!DOCTYPE html>
+<!-- Declares HTML5 document type -->
+
 <html lang="en">
+<!-- Root element, language set to English -->
+
 <head>
     <meta charset="UTF-8">
+    <!-- Supports all characters & emojis -->
+
     <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+    <!-- ⚠️ Typo here: widtd should be width
+         Used for responsive design on mobile -->
+
     <title>Gitdub</title>
+    <!-- Browser tab title -->
+
     <link rel="stylesheet" href="style.css">
+    <!-- External CSS file -->
 </head>
+
 <body>
 
+<!-- =========================================================
+     PRACTICE & LEARNING SECTION (COMMENTED FOR REVISION)
+     ========================================================= -->
+
 <!-- 
-    <h1 class="red">turn red color</h1>
-    <Change alert message   addEventListener--
-<-- <button onclick="Sclick()" style="background-color: burlywood; border-radius: 20%; border-style: hidden; color: chocolate;">Click for button</button><br> 
-<-- <button id="btn" >To click</button> 
-<-- <button class="btnn" >click</button> 
-<--Change text--
-<--Change button text--
-<-- <button onclick="innerText='changed'" >change</button> -->
+<h1 class="red">turn red color</h1>
+Used to test CSS class styling
+-->
 
-<!-- <h1 id="he">This is my first website</h1>
-<button onclick="btns()" >click to change h1 value</button>
+<!-- 
+<button onclick="Sclick()">Click for button</button>
+Inline onclick event (not recommended for large apps)
+-->
 
+<!-- 
+<button id="btn">To click</button>
+<button class="btnn">click</button>
+Used to practice ID vs Class selection
+-->
 
+<!-- 
+<button onclick="innerText='changed'">change</button>
+Directly changes button text
+-->
 
-<p id="p">pharagraph is no done</p> 
+<!-- =========================================================
+     H1 TEXT CHANGE PRACTICE
+     ========================================================= -->
+
+<!--
+<h1 id="he">This is my first website</h1>
+<button onclick="btns()">click to change h1 value</button>
+-->
+
+<!-- =========================================================
+     PARAGRAPH CHANGE PRACTICE
+     ========================================================= -->
+
+<!--
+<p id="p">paragraph is not done</p> 
 <button id="pra" onclick="pra()">para change</button>
- -->
-<!-- <h2 class="beginner">Beginner Level</h2>
- <div class="container">
-    <div class="card">
-        <h3>1. Html Basics</h3>
-        <ul> <--un-order list--
-           <li>Intrpduction to html</li> <-- List items--
-           <li>Html structur</li>
-           <li>Lists & Tables</li>
-           <li>Common Html Tags</li>
-           <li>Forms & Input Types</li>
-        </ul>
-    </div>
-    <div class="card">
-        <h2>2. Css Basics</h2>
-        <ul>
-            <li>Introduction to Css</li>
-            <li>Css syntax and sectors</li>
-            <li>Colors and Borders</li>
-            <li>Selectors</li>
-            <li>Box Model</li>
-            <li>Fonts</li>
-        </ul>
-    </div>
-    <div class="card">
-        <h2>3. JavaScript Basics</h2>
-        <ul>
-            <li>Introduction to Css</li>
-            <li>Css syntax and sectors</li>
-            <li>Colors and Borders</li>
-            <li>Selectors</li>
-            <li>Box Model</li>
-            <li>Fonts</li>
-        </ul>
-    </div>
+-->
 
-    
-</div> 
-
-<!-- 
-<div class="grid-container">
-    <div class="cards">Html Basics</div>
-    <div class="cards">Css Basics</div>
-    <div class="cards">JavaScript Basics</div>
-</div> -->
-
+<!-- =========================================================
+     CARD / COURSE STRUCTURE (BEGINNER LEVEL)
+     ========================================================= -->
 
 <h1>Beginner Level</h1>
+
 <div class="container">
-<div class="card">
-    <h2>1. Html</h2>
-    <ul>
-        <li  >
-            <div class="course-item">
-                <span id="ma"> madan kumar</span>
-                <button onclick="CompletCourse(this)" ondblclick="resetCourse(this)">Completed</button> 
-                <!-- You want a button that can change UI state:
+<!-- Wrapper for all cards -->
 
-                Click once → mark course as completed
-                
-                Double click → reset to original state
-                
-                This is called state toggle in UI.-->
-<!-- WHY THIS IS USED
-Attribute	Purpose
-onclick	Runs when user clicks once
-ondblclick	Runs when user double clicks
-this	Refers to this exact button
-🧠 What is this here?
+    <div class="card">
+        <h2>1. Html</h2>
 
-this means:
+        <ul>
+            <li>
+                <div class="course-item">
+                    <!-- One course row -->
 
-“The button that was clicked”
+                    <span id="ma">madan kumar</span>
+                    <!-- Course / user name -->
 
-So:
+                    <button 
+                        onclick="CompletCourse(this)" 
+                        ondblclick="resetCourse(this)">
+                        Completed
+                    </button>
 
-CompletCourse(this);
+                    <!-- 
+                    BUTTON LOGIC EXPLANATION:
 
+                    onclick       → single click (mark completed)
+                    ondblclick    → double click (reset)
+                    this          → refers to THIS button only
 
-JS receives:
+                    WHY "this"?
+                    - Makes function reusable
+                    - No need for IDs
+                    - Works for multiple list items
 
-btn = <button>Completed</button>
+                    Industry concept: UI State Toggle
+                    -->
+                </div>
+            </li>
 
+            <li>Parchuri</li>
+            <li>Kumar</li>
+        </ul>
+    </div>
 
-👉 This allows one function to work for multiple items.
+    <!-- ================= CSS CARD ================= -->
 
-🧠 USER INTERACTION FLOW
+    <div class="card">
+        <h2>2. Css</h2>
+        <ul>
+            <li>madan kumar</li>
+            <li>Parchuri</li>
+            <li>Kumar</li>
+        </ul>
+    </div>
 
-1️⃣ User clicks button
-→ markCompleted(this) runs
-→ Course marked completed
+    <!-- ================= JAVASCRIPT CARD ================= -->
 
-2️⃣ User double-clicks same button
-→ resetCourse(this) runs
-→ Course resets
+    <div class="card">
+        <h2>3. Javascript</h2>
+        <ul>
+            <li>madan kumar</li>
+            <li>Parchuri</li>
+            <li>Kumar</li>
+        </ul>
+    </div>
 
-💡 WHY THIS DESIGN IS SMART
-
-✔ No IDs needed
-✔ Works for unlimited list items
-✔ Clean DOM traversal
-✔ Industry-style reusable code
-
-💼 INTERVIEW READY EXPLANATION
-
-“I used click and double-click events to toggle UI state. The button reference is passed using this, and DOM traversal is used to update the related element.”
-
-🧠 MEMORY RULE (KEEP THIS)
-
-HTML → structure
-CSS → appearance
-JS → behavior
-
-🔥 BONUS: WHY NOT getElementById()?
-
-❌ Bad:
-
-document.getElementById("ma")
-
-
-✔ Good:
-
-btn.previousElementSibling
-
-
-Because:
-
-IDs must be unique
-
-Lists have many items
-
-This scales better
-
-🧪 FINAL MINI PRACTICE FOR YOU
-
-Try adding:
-
-Change button text to Undo
-
-Disable button after complete
-
-Add checkbox instead of button
-
-You are now learning REAL DOM thinking, not just syntax 👏
-If you want next:
-
-localStorage save
-
-animations
-
-React version
-
-accessibility improvements
-
-Just tell me 👍 -->
-
-            </div>
-     
-        </li>
-        <li>Parchuri</li>
-        <li>KUmar</li>
-    </ul>
 </div>
-<div class="card">
-    <h2>2. Css</h2>
-    <ul>
-        <li>madan kumar</li>
-        <li>Parchuri</li>
-        <li>KUmar</li>
-    </ul>
-</div>
-<div class="card">
-    <h2>3. Javascript</h2>
-    <ul>
-        <li>madan kumar</li>
-        <li>Parchuri</li>
-        <li>Kumar</li>
-    </ul>
-</div>
-</div>
+
+<!-- =========================================================
+     TABLE PRACTICE (COMMENTED)
+     ========================================================= -->
 
 <!-- 
-table>thead>tr>th*3^^tbody>tr*3>td*3
--  -->
-<!-- <div class="d">
-    <table border="1px">
-        <caption>Students Marks</caption>
-        <thead> 
-            <tr>
-                <td>Sno</td>
-                <td>name</td>
-                <td>Age</td>
-            </tr>
-        </thead>
-            <tr>
-                <td>1</td>
-                <td>Madan Kumar</td>
-                <td>29</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>Shiny</td>
-                <td>26</td>
-            </tr>
-            <tfoot>
-                <tr>
-                    <td colspan="4" >
-                        End of tde Tables
-                    </td>
-                </tr>
-            </tfoot>
-           
-           
-       
-       
-    </table>
-</div> -->
+<table border="1px">
+    <caption>Students Marks</caption>
 
-<!-- Html Forms & Input Types -->
- <!-- <form> is used to collect user data and send it to a server.
+    <thead>
+        <tr>
+            <td>Sno</td>
+            <td>Name</td>
+            <td>Age</td>
+        </tr>
+    </thead>
 
-<form>
-  -- inputs go here 
-</form>
+    <tr>
+        <td>1</td>
+        <td>Madan Kumar</td>
+        <td>29</td>
+    </tr>
 
-Real-world uses
+    <tr>
+        <td>2</td>
+        <td>Shiny</td>
+        <td>26</td>
+    </tr>
 
-Login pages
+    <tfoot>
+        <tr>
+            <td colspan="4">End of the Table</td>
+        </tr>
+    </tfoot>
+</table>
+-->
 
-Signup pages
-
-Payments
-
-Search bars
-
-Feedback forms
-
-Job applications
-
-🔹 PART 2: BASIC FORM STRUCTURE (MUST KNOW)
-<form action="/submit" method="post">
-  <input type="text" name="username">
-  <button type="submit">Submit</button>
-</form> -->
+<!-- =========================================================
+     FORM SECTION (REAL-WORLD IMPORTANT)
+     ========================================================= -->
 
 <form action="/submit" method="post">
+    <!-- action  → where data goes
+         method  → how data is sent (POST = secure) -->
+
     <input type="text" name="username">
+    <!-- name attribute is REQUIRED for backend -->
+
     <button type="submit">Submit</button>
+    <!-- Sends form data -->
 </form>
-<!-- Why each thing exists
-Part	Why
-action	Where data goes
-method	How data is sent (GET / POST)
-name	Key used by backend
-submit	Triggers form send -->
-<h1>hai</h1>
-    <script src="javascript.js"></script>
+
+<!-- =========================================================
+     JAVASCRIPT FILE
+     ========================================================= -->
+
+<script src="javascript.js"></script>
+<!-- External JS file for behavior -->
+
 </body>
 </html>
