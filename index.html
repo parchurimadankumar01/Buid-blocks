@@ -8,9 +8,8 @@
     <meta charset="UTF-8">
     <!-- Supports all characters & emojis -->
 
-    <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
-    <!-- ⚠️ Typo here: widtd should be width
-         Used for responsive design on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Used for responsive design on mobile -->
 
     <title>Gitdub</title>
     <!-- Browser tab title -->
@@ -178,15 +177,18 @@ Directly changes button text
 
 <form action="/submit" method="post">
     <!-- action  → where data goes
-         method  → how data is sent (POST = secure) -->
+         <!-- method  → how data is sent (POST = secure) -->
 
-    <input type="text" name="username">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" title="Enter your username">
     <!-- name attribute is REQUIRED for backend -->
 
     <button type="submit">Submit</button>
     <!-- Sends form data -->
 </form>
 <h1>hai</h1>
+
+
 <!-- =========================================================
      JAVASCRIPT FILE
      ========================================================= -->
