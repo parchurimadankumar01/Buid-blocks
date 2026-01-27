@@ -83,12 +83,7 @@ Directly changes button text
                         <span id="ma">madan kumar</span>
                         <!-- Course / user name -->
 
-                   <button 
-                        onclick="CompletCourse(this)" 
-                        ondblclick="resetCourse(this)">
-                            Completed
-                        </button>
-
+           <button type="button" onclick="CompletCourse(this)" ondblclick="resetCourse()">completed</button>
                         <!-- 
                     BUTTON LOGIC EXPLANATION:
 
@@ -131,6 +126,7 @@ Directly changes button text
                 <li>Parchuri</li>
                 <li>Kumar</li>
             </ul>
+        </div>
         </div>
 
         <!-- =========================================================
@@ -175,7 +171,7 @@ Directly changes button text
 
         <form action="/submit" method="post">
             <!-- action  → where data goes
-         <!-- method  → how data is sent (POST = secure) -->
+         < method  → how data is sent (POST = secure) -->
 
             <label for="username">Username:</label>
             <input type="text" id="username" name="username" placeholder="Enter your username" title="Enter your username">
