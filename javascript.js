@@ -84,3 +84,28 @@ function resetCourse(btn){
   text.innerText = original;
   text.classList.remove("completed")
 }
+
+
+const form = document.getElementById("todoForm");
+const input = document.getElementById("todoInput");
+const list = document.getElementById("todoList");
+const search = document.getElementById("search");
+
+// create an empty array to store all the todo list
+ 
+let todo = [];
+
+form.addEventListener('submit', function(e){
+
+    e.preventDefault();
+    addTodo(input.value);
+    input.value = "";
+   
+
+
+})
+
+ function addTodo(text){
+  todos.push({text, completed: false});
+  render();
+ }
