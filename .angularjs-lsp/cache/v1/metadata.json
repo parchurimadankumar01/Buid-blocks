@@ -2,13 +2,17 @@
   "version": 2,
   "tool_version": "0.1.0",
   "files": {
-    "d:\\build-blocks\\Buid-blocks\\javascript.js": {
-      "mtime": 1769347683,
-      "size": 1900
-    },
     "d:\\build-blocks\\Buid-blocks\\index.html": {
-      "mtime": 1769510136,
-      "size": 5645
+      "mtime": 1769510630,
+      "size": 5719
+    },
+    "d:\\build-blocks\\Buid-blocks\\javascript.js": {
+      "mtime": 1769511973,
+      "size": 2410
+    },
+    "d:\\build-blocks\\Buid-blocks\\js.js": {
+      "mtime": 1769517817,
+      "size": 2436
     }
   }
 }
