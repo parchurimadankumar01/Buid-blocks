@@ -111,3 +111,49 @@ That decision is done using @media. */
     background-color:aqua;
     width: auto;
  }
+
+ .containerr{
+        background: #222;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+ }
+
+ h1{
+  text-align: center;
+ }
+
+
+
+ input,button{
+  width:100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 5px;
+ }
+
+ button{
+  background:#4caf50;
+  color: white;
+  cursor: pointer;
+ }
+
+ li{
+  display: flex;
+  justify-content: space-between;
+  background: #333;
+  padding: 6PX;
+  margin: 5PX 0;
+  border-radius: 5px;
+ }
+
+ .completed{
+  text-decoration: line-through;
+  color: gray;
+ }
+
+ .action button{
+  margin-left: 5px;
+  padding: 3px 6px;
+ }
